@@ -5,6 +5,15 @@
 }
 :root{
     --dark:#000000;
+    --white: #FFFFFF;
+}
+body{
+    background-image: url(../assets/images/v748-toon-103.jpg);
+    background-size:cover;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+html{
+    font-size: 62.5%;
 }
 /*estilos del header*/
 .header-cotainer{
@@ -19,10 +28,28 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding-top: 22px;
+}
+.gmail-text-header{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.gmail-text-header:hover{
+    text-decoration:underline;
+    cursor: pointer;
+}
+.image-text-header{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.image-text-header:hover{
+    text-decoration:underline;
+    cursor: pointer;
 }
 .menu-header img{
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
 }
 .profile-header img{
     width: 35px;
@@ -31,5 +58,77 @@
     border-radius: 100%;
 }
 .contents{
-    margin-right: 15px;
+    margin-right: 20px;
+}
+/*estilos del main*/
+.main-container{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-content{
+    display: grid;
+    grid-template-rows: 1fr 0.5fr 3fr;
+    width: 60%;
+    height: 70%;
+}
+.google-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.google-title img{
+    width: 300px;
+    height: 100px;
+}
+.bar-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search{
+    margin-top: 20px;
+    width: 70%;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 4px 5px 10px 4px #ddd;
+}
+/*los estilos del container favorites */
+.container-favorites{
+    margin-top: 40px;
+    width:75% ;
+    height: 25vh;
+    display: grid;
+    justify-self: center;
+    grid-template-columns:repeat(5 , 1fr) ;
+    grid-template-rows: repeat(2 ,2fr);
+}
+.card-favorite{
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-image-favorite{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 55px;
+    height: 55px;
+    background-color: var(--white);
+    border: none;
+    border-radius: 100%;
+}
+.container-image-favorite img{
+    width: 35px;
+    height: 35px;
+}
+.text-container-favorite{
+    font-size: 1.2rem;
+    font-weight: 500;
 }
